@@ -1,5 +1,7 @@
-.NewsBanner {
+.banner {
   display: flex;
+  width: 100%;
+  flex-direction: column;
   gap: 10px;
 }
 
@@ -7,6 +9,7 @@
   font-size: 16px;
 }
 
-.date {
-  font-size: 14px;
+.extra {
+  font-size: 12px;
+  color: slategray;
 }
