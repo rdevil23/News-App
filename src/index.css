@@ -14,3 +14,8 @@
   background-color: wheat;
   color: black;
 }
+
+.container {
+  padding: 10px;
+  min-height: 100vh;
+}
