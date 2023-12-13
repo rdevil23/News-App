@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'NewsreaderPagination';
+  src: local('NewsreaderPagination'),
+    url(/src/vendor/fonts/Newsreader/Newsreader-VariableFont_opsz\,wght.ttf);
+}
+
+.pagination {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.pageNumber {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+  font-family: 'NewsreaderPagination', 'Inter', 'sans-serif';
+  background-color: #dac59e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pageNumber:hover {
+  background-color: #caad77;
+}
+
+.pageNumber:disabled {
+  border: 1px solid #9b6a08;
+  background-color: #caad77;
+  cursor: default;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  width: 32px;
+  height: 32px;
+  color: firebrick;
+  font-family: 'NewsreaderPagination', 'Inter', 'sans-serif';
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+}
+
+.arrow:hover {
+  border: 1px solid firebrick;
+}
+
+.arrow:disabled {
+  cursor: default;
+  border: none;
+}
