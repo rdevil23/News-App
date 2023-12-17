@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'NewsreaderPagination';
+  src: local('NewsreaderPagination'),
+    url(/src/vendor/fonts/Newsreader/Newsreader-VariableFont_opsz\,wght.ttf);
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+}
+
+.arrow {
+  min-width: 32px;
+  height: 32px;
+  color: firebrick;
+  font-family: 'NewsreaderPagination', 'Inter', 'sans-serif';
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+}
+
+.arrow:hover {
+  border: 1px solid firebrick;
+}

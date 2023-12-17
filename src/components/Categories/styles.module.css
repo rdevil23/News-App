@@ -1,11 +1,8 @@
 .categories {
   display: flex;
-  align-items: flex-start;
   width: 100%;
-  box-sizing: border-box;
   overflow-x: auto;
   white-space: nowrap;
-  scrollbar-width: none;
   gap: 4px;
 }
 
@@ -17,6 +14,11 @@
   border: none;
   border-radius: 8px;
   background-color: #dac59e;
+}
+
+.item:hover {
+  cursor: pointer;
+  background-color: #caad77;
 }
 
 .active {
