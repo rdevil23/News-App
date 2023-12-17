@@ -4,4 +4,6 @@
   box-sizing: border-box;
   width: 100%;
   gap: 10px;
+  max-height: 1210px;
+  overflow-y: auto;
 }
