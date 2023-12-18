@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Newsreader';
-  src: local('Newsreader'),
-    url(/src/vendor/fonts/Newsreader/Newsreader-Italic-VariableFont_opsz\,wght.ttf);
+  src: local('Newsreader'), url(./vendor/fonts/Newsreader/Newsreader-Italic-VariableFont.ttf);
 }
 
 * {

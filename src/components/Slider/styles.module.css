@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'NewsreaderPagination';
-  src: local('NewsreaderPagination'),
-    url(/src/vendor/fonts/Newsreader/Newsreader-VariableFont_opsz\,wght.ttf);
+  src: local('NewsreaderPagination'), url(../../vendor/fonts/Newsreader/Newsreader-VariableFont.ttf);
 }
 
 .slider {
