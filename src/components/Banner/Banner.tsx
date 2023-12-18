@@ -1,6 +1,10 @@
 import styles from './styles.module.css';
 
-const Banner = ({ image }) => {
+interface image {
+  image: string;
+}
+
+const Banner = ({ image }: image) => {
   return (
     <div className={styles.wrapper}>
       {image ? <img src={image} alt="news" className={styles.banner} /> : null}
