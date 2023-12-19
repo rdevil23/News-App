@@ -1,3 +1,4 @@
+import { useTheme } from '../../context/ThemeContext';
 import { formatTimeAgo } from '../../helpers/formatTimeAgo';
 import { INews } from '../../interfaces';
 import styles from './styles.module.css';
@@ -7,9 +8,14 @@ interface Props {
 }
 
 const NewsItem = ({ item }: Props) => {
+  const { isDark } = useTheme();
+
   return (
     <li className={styles.item}>
-      <div className={styles.wrapper} style={{ backgroundImage: `url(${item.image})` }}>
+      <div
+        className={`${styles.wrapper} ${isDark ? styles.dark : styles.light}`}
+        style={{ backgroundImage: `url(${item.image})` }}
+      >
         {item.image === 'None' ? (
           <p className={styles.notfound}>{"Banner dosn't exist on source!"}</p>
         ) : null}

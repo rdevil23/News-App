@@ -10,11 +10,31 @@
   text-decoration: none;
   box-sizing: border-box;
   font-family: 'Newsreader', 'Inter', 'sans-serif';
-  background-color: wheat;
-  color: black;
 }
 
 .container {
   padding: 10px;
   min-height: 100vh;
+}
+
+.app.dark .container {
+  background-color: #201912;
+}
+
+.app.light .container {
+  background-color: wheat;
+}
+
+.app.dark p,
+.app.dark h3,
+.app.dark h2,
+.app.dark h1 {
+  color: #e7e3de;
+}
+
+.app.light p,
+.app.light h3,
+.app.light h2,
+.app.light h1 {
+  color: black;
 }
