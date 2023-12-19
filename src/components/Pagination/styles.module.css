@@ -19,20 +19,9 @@
   justify-content: center;
   margin: 2px;
   font-family: 'NewsreaderPagination', 'Inter', 'sans-serif';
-  background-color: #dac59e;
-  border: none;
   border-radius: 8px;
   cursor: pointer;
-}
-
-.pageNumber:hover {
-  background-color: #caad77;
-}
-
-.pageNumber:disabled {
-  border: 1px solid #9b6a08;
-  background-color: #caad77;
-  cursor: default;
+  border: none;
 }
 
 .list {
@@ -44,18 +33,45 @@
 .arrow {
   width: 32px;
   height: 32px;
-  color: firebrick;
   font-family: 'NewsreaderPagination', 'Inter', 'sans-serif';
   cursor: pointer;
-  border: none;
   border-radius: 8px;
+  border: none;
 }
 
-.arrow:hover {
-  border: 1px solid firebrick;
+.pagination.dark .pageNumber,
+.pagination.dark .arrow {
+  background-color: #312712;
+  color: #e7e3de;
 }
 
+.pagination.light .pageNumber,
+.pagination.light .arrow {
+  background-color: #dac59e;
+  color: black;
+}
+
+.pagination.dark .pageNumber:hover,
+.pagination.dark .arrow:hover {
+  background-color: #412e04;
+}
+
+.pagination.light .pageNumber:hover,
+.pagination.light .arrow:hover {
+  background-color: #caad77;
+}
+
+.pageNumber:disabled,
 .arrow:disabled {
   cursor: default;
-  border: none;
+  transform: translateY(-2px);
+  opacity: 0.5;
+}
+
+.pagination.dark .pageNumber:disabled {
+  border: 1px solid wheat;
+}
+
+.pagination.light .pageNumber:disabled {
+  border: 1px solid #3a2701;
 }

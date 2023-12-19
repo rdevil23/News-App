@@ -22,7 +22,6 @@
 .wrapper {
   width: 64px;
   height: 64px;
-  background-color: #e7e6d8;
   background-position: center;
   background-size: cover;
   flex-shrink: 0;
@@ -35,7 +34,5 @@
 .notfound {
   width: 40px;
   text-align: center;
-  font-size: 8px;
-  background-color: #e7e6d8;
-  color: brown;
+  font-size: 10px;
 }

@@ -13,7 +13,6 @@
 .arrow {
   min-width: 32px;
   height: 32px;
-  color: firebrick;
   font-family: 'NewsreaderPagination', 'Inter', 'sans-serif';
   cursor: pointer;
   border: none;
@@ -21,5 +20,15 @@
 }
 
 .arrow:hover {
-  border: 1px solid firebrick;
+  opacity: 0.7;
+}
+
+.slider.dark .arrow {
+  background-color: #312712;
+  color: #e7e3de;
+}
+
+.slider.light .arrow {
+  background-color: #dac59e;
+  color: black;
 }
