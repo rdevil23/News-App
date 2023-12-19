@@ -1,10 +1,25 @@
 .header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 20px 10px;
   border-bottom: 1px solid black;
+}
+
+.info {
+  display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.dark {
+  background-color: #201912;
+  border-bottom-color: wheat;
+}
+
+.light {
+  background-color: wheat;
 }
 
 .title {
@@ -13,4 +28,8 @@
 
 .date {
   font-size: 14px;
+}
+
+.theme {
+  width: 24px;
 }
